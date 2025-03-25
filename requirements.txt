@@ -1,0 +1,7 @@
+streamlit
+torch
+torchvision
+spacy
+nltk
+pandas
+Pillow
