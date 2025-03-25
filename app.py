@@ -10,14 +10,7 @@ import pickle
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load spaCy English model for tokenization
-# spacy_en = spacy.load("en_core_web_sm")
-
-# with open('spacy_en.pkl', 'wb') as f:
-#     pickle.dump(spacy_en, f)
-
-# Load the spacy_en
-with open('spacy_en.pkl', 'rb') as f:
-    spacy_en = pickle.load(f)
+spacy_en = spacy.load("en_core_web_sm")
 
 class Vocabulary:
     def __init__(self, freq_threshold=5):
